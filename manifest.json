@@ -1,0 +1,17 @@
+{
+    "content_scripts"	:[ 
+		{
+			"css"		:["styles.css"],
+			"js"		:["keymap.js","javascript.js"],
+			"matches"	:[ "http://*/*", "https://*/*" ],
+			"run_at"	:"document_end"
+		} 
+	],
+	"icons"				:{"128":"icon_128.png"},
+	"page_action"		: {
+		"default_title"	: "Quick Keys"
+	},	
+	"description"		:"Shows and activates the access keys on a web page. Use 'LEFT CLICK' and 'key' ",	
+	"name"				:"Quick Keys",
+	"version"			:"4.4"
+}
